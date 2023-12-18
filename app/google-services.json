@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "602189725992",
+    "project_id": "movie-app-fbd10",
+    "storage_bucket": "movie-app-fbd10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602189725992:android:dcecd8de7a2ea6b6fe901d",
+        "android_client_info": {
+          "package_name": "com.claudiolibanez.movieapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuPf7tVUgMSHq1tO0x2Zr0KvJXatpbPEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
