@@ -13,6 +13,8 @@ import com.claudiolibanez.movieapp.R
 import com.claudiolibanez.movieapp.databinding.FragmentRegisterBinding
 import com.claudiolibanez.movieapp.utils.StateView
 import dagger.hilt.android.AndroidEntryPoint
+import hideKeyboard
+import isEmailValid
 
 @AndroidEntryPoint
 class RegisterFragment : Fragment() {
@@ -52,14 +54,15 @@ class RegisterFragment : Fragment() {
         val email = binding.editEmail.text.toString()
         val password =  binding.editPassword.text.toString()
 
-        if (email.isNotEmpty()) {
+        if (email.isEmailValid()) {
             if (password.isNotEmpty()) {
+                hideKeyboard()
                 register(email, password)
             } else {
 
             }
         } else {
-
+            Toast.makeText(requireContext(), "E-mail inválido!", Toast.LENGTH_SHORT).show()
         }
     }
 

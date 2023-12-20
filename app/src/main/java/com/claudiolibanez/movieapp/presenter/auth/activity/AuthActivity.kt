@@ -1,4 +1,4 @@
-package com.claudiolibanez.movieapp.presenter
+package com.claudiolibanez.movieapp.presenter.auth.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,12 +7,12 @@ import com.claudiolibanez.movieapp.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class AuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
 //        installSplashScreen()
 
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_auth)
     }
 }
