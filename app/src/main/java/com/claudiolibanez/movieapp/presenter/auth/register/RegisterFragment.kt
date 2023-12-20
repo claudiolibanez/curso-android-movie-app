@@ -14,6 +14,7 @@ import com.claudiolibanez.movieapp.databinding.FragmentRegisterBinding
 import com.claudiolibanez.movieapp.utils.StateView
 import dagger.hilt.android.AndroidEntryPoint
 import hideKeyboard
+import initToolbar
 import isEmailValid
 
 @AndroidEntryPoint
@@ -35,6 +36,8 @@ class RegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        initToolbar(binding.toolbar)
 
         initListeners()
     }
