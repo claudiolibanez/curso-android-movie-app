@@ -38,7 +38,7 @@ class RegisterFragment : Fragment() {
     }
 
     private fun initListeners() {
-        binding.buttonSignUp.setOnClickListener {
+        binding.buttonRegister.setOnClickListener {
             validateData()
         }
 
@@ -70,7 +70,7 @@ class RegisterFragment : Fragment() {
                     binding.progressLoading.isVisible = true
                 }
                 is StateView.Success -> {
-                    Toast.makeText(requireContext(), "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), "Email enviado com sucesso!", Toast.LENGTH_SHORT).show()
                 }
                 is StateView.Error -> {
                     binding.progressLoading.isVisible = false

@@ -38,7 +38,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun initListeners() {
-        binding.buttonSignIn.setOnClickListener {
+        binding.buttonLogin.setOnClickListener {
             validateData()
         }
 

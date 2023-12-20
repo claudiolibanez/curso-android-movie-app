@@ -79,7 +79,7 @@
             android:importantForAutofill="no" />
 
         <Button
-            android:id="@+id/button_sign_in"
+            android:id="@+id/button_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -102,7 +102,7 @@
             tools:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_sign_in"
+            app:layout_constraintTop_toBottomOf="@id/button_login"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="ContentDescription" />
