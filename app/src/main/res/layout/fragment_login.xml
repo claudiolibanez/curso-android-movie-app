@@ -108,7 +108,7 @@
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/button_forgot_password"
+            android:id="@+id/button_forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -130,7 +130,7 @@
             android:layout_marginHorizontal="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_forgot_password"
+            app:layout_constraintTop_toBottomOf="@id/button_forgot"
             >
 
             <View
