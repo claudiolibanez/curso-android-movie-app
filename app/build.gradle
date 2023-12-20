@@ -47,31 +47,29 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // Splash API
-    implementation 'androidx.core:core-splashscreen:1.0.1'
+    implementation "androidx.core:core-splashscreen:$splashscreen_version"
 
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:32.7.0')
     implementation 'com.google.firebase:firebase-analytics'
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-database-ktx")
-    implementation("com.google.firebase:firebase-storage")
+    implementation("com.google.firebase:firebase-storage-ktx")
 
     // Dagger Hilt
-    implementation 'com.google.dagger:hilt-android:2.50'
-    kapt 'com.google.dagger:hilt-compiler:2.50'
+    implementation "com.google.dagger:hilt-android:$daggerhilt_version"
+    kapt "com.google.dagger:hilt-compiler:$daggerhilt_version"
 
     // Livecycle
-    def lifecycle_version = "2.6.2"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
     // Navigation
-    def nav_version = "2.7.6"
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
 
     // GLide
-    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation "com.github.bumptech.glide:glide:$glide_version"
 
     // Unit tests
     testImplementation 'junit:junit:4.13.2'
